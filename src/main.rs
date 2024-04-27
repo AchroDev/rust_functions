@@ -21,7 +21,8 @@ fn snake_case() {
 /*
 *   We can define functions to have parameters, which are special variables that
 *   are part of a function’s signature. When a function has parameters, you can
-*   provide it with concrete values for those parameters.
+*   provide it with concrete values for those parameters. Or you can leave them
+*   as a default value such as "x" and specify the value later in the main function.
 */
 
 fn fun_parameters(x: i32) {
