@@ -2,7 +2,11 @@
 fn main() {
     println!("Hello, world!");
 
+    // Calling the "snake_case" function
     snake_case();
+
+    // Calling the "fun_parameters" function and specifying x to the value 5
+    fun_parameters(5);
 }
 
 /*
@@ -12,4 +16,14 @@ fn main() {
 
 fn snake_case() {
     println!("This is a function using snake case styling for the name!");
+}
+
+/*
+*   We can define functions to have parameters, which are special variables that
+*   are part of a function’s signature. When a function has parameters, you can
+*   provide it with concrete values for those parameters.
+*/
+
+fn fun_parameters(x: i32) {
+    println!("The value of x is: {x}");
 }
