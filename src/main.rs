@@ -1,17 +1,3 @@
-// Entry point
-fn main() {
-    println!("Hello, world!");
-
-    // Calling the "snake_case" function
-    snake_case();
-
-    // Calling the "fun_parameters" function and specifying x to the value 5
-    fun_parameters(5);
-
-    // Calling the "print_labeled_measurement" function and specifying the int and char
-    print_labeled_measurement(5, 'h')
-}
-
 /*
 *   Rust code uses snake case as the conventional style for function and variable
 *   names, in which all letters are lowercase and underscores separate words.
@@ -42,4 +28,37 @@ fn fun_parameters(x: i32) {
 fn print_labeled_measurement(value: i32, unit_label: char) {
     // When defining multiple parameters, separate the parameter declarations with commas
     println!("The measurement is: {value}{unit_label}");
+}
+
+/*
+*   Function bodies are made up of a series of statements optionally ending in an
+*   expression. So far, the functions we've covered haven't included an ending expression,
+*   but you have seen an expression as part of a statement. This is important, as Rust is an
+*   expression-based language. Other languages don't have the same distinctions.
+*/
+
+// Statements are instructions that perform some action and do not return a value.
+// Expressions evaluate to a resultant value.
+
+fn statements_and_expressions() {
+    // This is an example of a statement.
+    let y = 6;
+
+    println!("{y}");
+}
+
+// Entry point
+fn main() {
+    println!("Hello, world!");
+
+    // Calling the "snake_case" function
+    snake_case();
+
+    // Calling the "fun_parameters" function and specifying x to the value 5
+    fun_parameters(5);
+
+    // Calling the "print_labeled_measurement" function and specifying the int and char
+    print_labeled_measurement(5, 'h');
+
+    statements_and_expressions();
 }
