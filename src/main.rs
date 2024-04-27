@@ -7,6 +7,9 @@ fn main() {
 
     // Calling the "fun_parameters" function and specifying x to the value 5
     fun_parameters(5);
+
+    // Calling the "print_labeled_measurement" function and specifying the int and char
+    print_labeled_measurement(5, 'h')
 }
 
 /*
@@ -27,4 +30,16 @@ fn snake_case() {
 
 fn fun_parameters(x: i32) {
     println!("The value of x is: {x}");
+}
+
+/*
+*   In function signatures, you must declare the type of each parameter. This is a
+*   deliberate decision in Rust’s design: requiring type annotations in functions
+*   definitions means the compiler almost never needs you to use them elsewhere in
+*   the code to figure out what type you mean.
+*/
+
+fn print_labeled_measurement(value: i32, unit_label: char) {
+    // When defining multiple parameters, separate the parameter declarations with commas
+    println!("The measurement is: {value}{unit_label}");
 }
