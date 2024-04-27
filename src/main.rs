@@ -25,8 +25,8 @@ fn fun_parameters(x: i32) {
 *   the code to figure out what type you mean.
 */
 
+// When defining multiple parameters, separate the parameter declarations with commas
 fn print_labeled_measurement(value: i32, unit_label: char) {
-    // When defining multiple parameters, separate the parameter declarations with commas
     println!("The measurement is: {value}{unit_label}");
 }
 
