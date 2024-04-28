@@ -45,7 +45,21 @@ fn statements_and_expressions() {
     let y = 6;
 
     println!("{y}");
+
+    /*
+    This is an example of an incorrect statement.
+    let x = (let y = 6);
+     */
+    // Function definitions are also statements; the entire preceding example is a statement in itself.
+    // Statements do not return values. Therefore, you can’t assign a let statement to another variable.
 }
+/*
+*   The let y = 6 statement does not return a value, so there isn’t anything for x to bind to.
+*   This is different from what happens in other languages, such as C and Ruby,
+*   where the assignment returns the value of the assignment.
+*   In those languages, you can write x = y = 6 and have both x and y have
+*   the value 6; that is not the case in Rust.
+*/
 
 // Entry point
 fn main() {
