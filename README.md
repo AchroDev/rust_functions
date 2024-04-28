@@ -35,4 +35,4 @@
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
 [license-shield]: https://img.shields.io/github/license/AchroDev/AchroDev.svg?style=for-the-badge
-[license-url]: https://github.com/AchroDev/voidConfig/blob/main/LICENSE.txt
+[license-url]: https://github.com/AchroDev/rust_functions/blob/main/LICENSE.txt
