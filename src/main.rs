@@ -65,7 +65,7 @@ fn statements_and_expressions() {
 fn new_scope_block() {
     let y = {
         let x = 3;
-        x + 1;
+        x + 1
     };
 
     println!("The value of y is: {y}");
