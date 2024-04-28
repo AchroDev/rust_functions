@@ -95,6 +95,11 @@ fn six() -> i32 {
     return 6;
 }
 
+// Extra return function example
+fn plus_one(x: i32) -> i32 {
+    x + 1
+}
+
 // Entry point
 fn main() {
     println!("Hello, world!");
@@ -114,6 +119,8 @@ fn main() {
 
     let x = five();
     let y = six();
+    let z = plus_one(5);
 
     println!("The value of x is: {x}, and the value of y is: {y}");
+    println!("The value of z is: {z}");
 }
