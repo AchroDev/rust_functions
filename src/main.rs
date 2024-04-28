@@ -61,6 +61,16 @@ fn statements_and_expressions() {
 *   the value 6; that is not the case in Rust.
 */
 
+// A new scope block created with curly brackets is an expression
+fn new_scope_block() {
+    let y = {
+        let x = 3;
+        x + 1;
+    };
+
+    println!("The value of y is: {y}");
+}
+
 // Entry point
 fn main() {
     println!("Hello, world!");
@@ -75,4 +85,6 @@ fn main() {
     print_labeled_measurement(5, 'h');
 
     statements_and_expressions();
+
+    new_scope_block();
 }
