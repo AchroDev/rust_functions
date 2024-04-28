@@ -77,6 +77,24 @@ fn new_scope_block() {
     println!("The value of y is: {y}");
 }
 
+/*
+*   Functions can return values to the code that calls them. We don’t name return values,
+*   but we must declare their type after an arrow (->). In Rust, the return value of the
+*   function is synonymous with the value of the final expression in the block of the body
+*   of a function. You can return early from a function by using the return keyword and specifying
+*   a value, but most functions return the last expression implicitly.
+*/
+
+// Example of a function that returns a value, the keyword "return" is implied
+fn five() -> i32 {
+    5
+}
+
+// Example of the same type of function with explicitly stating "return"
+fn six() -> i32 {
+    return 6;
+}
+
 // Entry point
 fn main() {
     println!("Hello, world!");
@@ -93,4 +111,9 @@ fn main() {
     statements_and_expressions();
 
     new_scope_block();
+
+    let x = five();
+    let y = six();
+
+    println!("The value of x is: {x}, and the value of y is: {y}");
 }
